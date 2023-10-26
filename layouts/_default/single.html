@@ -1,0 +1,52 @@
+{{ define "main" }}
+<article>
+    <header id="post-header">
+        {{ if ne .Title "about" }}
+        <h1 class="main-title">{{ .Title }}</h1>
+        {{end}}
+        <div>
+        {{- if isset .Params "date" -}}
+            {{ if eq .Lastmod .Date }}
+                <time>{{ .Date | time.Format (i18n "post.created") }}</time>
+            {{ else }}
+                <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
+            {{ end }}
+        {{- end -}}
+        </div>
+    </header>
+    {{ $wordCount := len (split .Content " ") }}
+    {{ $readingTime := div $wordCount 250 }}
+    {{ if lt $readingTime 1 }}
+        {{ $readingTime = "Less than 1" }}
+    {{ end }}
+
+    {{ if ne .Title "about" }}
+    <p class="post-meta">
+    {{ with .Params.tags }}
+        {{ range . }}
+            <span class="tag-item"><a href="{{ "tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a></span>
+        {{ end }}
+    {{ end }}
+    <span class="separator">|</span>
+    <span class="reading-time">Reading time: {{ if eq $readingTime "Less than 1" }}less than 1 min{{ else }}{{ $readingTime }} min{{ end }}</span>
+    </p>
+    {{ end }}
+
+    {{- .Content -}}
+    <div class="social-sharing">
+        <a href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?text={{ .Permalink }}" target="_blank">
+         <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+</article>
+{{ end }}
