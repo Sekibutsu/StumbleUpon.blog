@@ -2,7 +2,6 @@ baseURL: "https://stumbleupon.blog"
 languageCode: en-us
 title: StumbleUpon.blog
 theme: etch
-uglyURLs: "true"
 
 params: 
   description: Your site description
