@@ -1,4 +1,4 @@
-baseURL: "https://stumbleupon.blog/"
+baseURL: "stumbleupon.blog"
 languageCode: en-us
 title: StumbleUpon.blog
 theme: etch
