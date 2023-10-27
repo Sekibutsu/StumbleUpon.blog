@@ -1,4 +1,4 @@
-baseURL: "stumbleupon.blog"
+baseURL: "https://stumbleupon.netlify.app"
 languageCode: en-us
 title: StumbleUpon.blog
 theme: etch
