@@ -1,4 +1,4 @@
-baseURL: "https://stumbleupon.netlify.app/"
+baseURL: "https://stumbleupon.blog/"
 languageCode: en-us
 title: StumbleUpon.blog
 theme: etch
@@ -10,7 +10,6 @@ pygmentsUseClasses: true
 params: 
   description: Your site description
   copyright: Copyright © 2023 Blog Owner
-  dark: off
   highlight: true
 
 
