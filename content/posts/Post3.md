@@ -1,7 +1,7 @@
 ---
 title: I Wish I Knew What I Was Doing
 date: 2023-08-25T19:10:41+03:00
-draft: true
+draft: false
 tags: ["philosophy", "spirituality"]
 ---
 

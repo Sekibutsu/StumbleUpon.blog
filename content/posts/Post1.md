@@ -1,7 +1,7 @@
 ---
 title: Why Be Brilliant
 date: 2023-08-25T19:10:33+03:00
-draft: true
+draft: false
 tags: ["philosophy", "psychology"]
 ---
 

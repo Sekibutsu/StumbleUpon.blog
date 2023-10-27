@@ -1,6 +1,6 @@
 ---
 title: "about"
-draft: true
+draft: false
 ---
 
 # Contact me

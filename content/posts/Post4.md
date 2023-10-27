@@ -1,7 +1,8 @@
 ---
 title: The Walking Dead
 date: 2023-08-25T19:10:43+03:00
-draft: true
+draft: false
+tags: ["terminology"]
 ---
 
 # Header

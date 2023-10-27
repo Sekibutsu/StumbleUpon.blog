@@ -1,7 +1,7 @@
 ---
 title: Controversies In The Beehive
 date: 2023-08-25T19:10:37+03:00
-draft: true
+draft: false
 tags: ["philosophy", "psychology"]
 ---
 
